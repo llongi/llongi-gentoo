@@ -23,7 +23,6 @@ RDEPEND="dev-python/mako
 		dev-python/pyyaml
 		app-text/pytextile
 		dev-python/markdown[pygments]
-		virtual/python-argparse
 		dev-python/docutils
 		dev-python/pygments"
 
