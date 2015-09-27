@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit eutils
+inherit eutils autotools
 
 DESCRIPTION="Generate a file list suitable for full or incremental backups."
 HOMEPAGE="https://github.com/miekg/${PN}"
@@ -28,6 +28,7 @@ src_prepare() {
 }
 
 src_configure() {
+	eautoreconf
 	econf $(use_enable debug)
 }
 
