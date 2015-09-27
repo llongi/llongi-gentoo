@@ -7,8 +7,8 @@ EAPI=4
 inherit eutils
 
 DESCRIPTION="Generate a file list suitable for full or incremental backups."
-HOMEPAGE="http://www.miek.nl/projects/rdup"
-SRC_URI="http://www.miek.nl/projects/${PN}/${P}.tar.bz2"
+HOMEPAGE="https://github.com/miekg/${PN}"
+SRC_URI="https://github.com/miekg/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
