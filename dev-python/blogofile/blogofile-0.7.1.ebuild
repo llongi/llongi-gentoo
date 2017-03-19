@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="5"
+PYTHON_COMPAT=( python2_7 )
 
-inherit distutils
+inherit distutils-r1
 
 KEYWORDS="~amd64 ~x86"
 
@@ -25,5 +24,3 @@ RDEPEND="dev-python/mako
 		dev-python/markdown[pygments]
 		dev-python/docutils
 		dev-python/pygments"
-
-RESTRICT_PYTHON_ABIS="3.*"
