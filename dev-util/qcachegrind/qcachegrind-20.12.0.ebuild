@@ -9,7 +9,7 @@ inherit desktop gnome2-utils qmake-utils xdg-utils
 SRC_URI="mirror://kde/stable/applications/${PV}/src/kcachegrind-${PV}.tar.xz"
 
 DESCRIPTION="Qt frontend for Cachegrind"
-HOMEPAGE="https://kcachegrind.github.io/html/Home.html"
+HOMEPAGE="https://apps.kde.org/en/kcachegrind"
 
 LICENSE="GPL-2"
 SLOT="0"
