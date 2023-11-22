@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 RDEPEND="${PYTHON_DEPS} dev-qt/qtbase:6[gui,opengl]"
 DEPEND="${RDEPEND}"
 
-S="${WORKDIR}/kcachegrind-${PV}"
+S="${WORKDIR}/kcachegrind-v${PV}"
 
 src_configure() {
 	eqmake6
