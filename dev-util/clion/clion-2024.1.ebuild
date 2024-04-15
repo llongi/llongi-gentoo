@@ -44,7 +44,6 @@ src_prepare() {
     default
 
     rm -rv ./lib/async-profiler/aarch64 || die
-    rm -rv ./plugins/cwm-plugin/quiche-native/linux-aarch64 || die
     rm -rv ./plugins/python-ce/helpers/pydev/pydevd_attach_to_process/attach_linux_aarch64.so || die
 }
 
