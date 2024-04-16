@@ -17,12 +17,14 @@ DEPEND="sys-apps/lm-sensors"
 RDEPEND="${DEPEND}"
 
 src_unpack() {
-	unpack ${A}
-	unpack ${FILESDIR}/${P}-deps.tar.xz
+	unpack "${A}"
+	unpack "${FILESDIR}/${P}-vendor.tar.xz"
+
+	go-module_src_unpack
 }
 
 src_compile() {
-	emake GO_FLAGS="-mod=vendor" build
+	ego build
 
 	./fan2go completion bash > "${PN}.bash" || die
 	./fan2go completion zsh  > "${PN}.zsh"  || die
