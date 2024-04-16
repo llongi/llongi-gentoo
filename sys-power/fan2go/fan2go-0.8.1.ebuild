@@ -17,7 +17,7 @@ DEPEND="sys-apps/lm-sensors"
 RDEPEND="${DEPEND}"
 
 src_compile() {
-	emake GO_FLAGS="-mod=vendor" build
+	ego build
 
 	./fan2go completion bash > "${PN}.bash" || die
 	./fan2go completion zsh  > "${PN}.zsh"  || die
