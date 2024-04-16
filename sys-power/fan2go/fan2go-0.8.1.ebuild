@@ -16,8 +16,13 @@ KEYWORDS="amd64"
 DEPEND="sys-apps/lm-sensors"
 RDEPEND="${DEPEND}"
 
+src_unpack() {
+	unpack ${A}
+	unpack ${FILESDIR}/${P}-deps.tar.xz
+}
+
 src_compile() {
-	ego build
+	emake GO_FLAGS="-mod=vendor" build
 
 	./fan2go completion bash > "${PN}.bash" || die
 	./fan2go completion zsh  > "${PN}.zsh"  || die
