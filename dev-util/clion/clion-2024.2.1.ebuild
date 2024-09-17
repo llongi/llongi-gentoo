@@ -51,10 +51,10 @@ src_install() {
 	local dir="/opt/${P}"
 
 	dodir "${dir}"
-	cp -a . "${ED}/${dir}" || die
+	cp -a . "${D}/${dir}" || die
 
 	make_wrapper "${PN}" "${dir}"/bin/"${MY_PN}".sh
-	newicon "${dir}"/bin/"${MY_PN}".svg "${PN}".svg
+	newicon "${D}/${dir}"/bin/"${MY_PN}".svg "${PN}".svg
 	make_desktop_entry "${PN}" "${SIMPLE_NAME} ${VER}" "${PN}" "Development;IDE;"
 
 	# recommended by: https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit
