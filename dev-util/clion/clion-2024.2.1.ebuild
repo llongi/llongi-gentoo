@@ -32,6 +32,7 @@ RDEPEND="
 	x11-libs/libXfixes
 	x11-libs/libXi
 	x11-libs/libXrandr
+	virtual/libcrypt
 "
 
 SIMPLE_NAME="CLion"
